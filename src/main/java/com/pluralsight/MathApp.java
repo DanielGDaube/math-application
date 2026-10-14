@@ -22,11 +22,53 @@ public class MathApp {
         // What is the area of the circle?
         System.out.println("The area of the circle is " + area);
 
-        // Set question4Number to 5.0
+        // Declare variable question4Number
         double question4Number = 5.0;
         // Find the square root of question4Number
         double squareRoot = Math.sqrt(5.0);
         // What is the square root of 5.0?
         System.out.println("The square root of " + question4Number + " is " + squareRoot);
+
+        // Declare variables for point coordinates
+        int firstPoint_x = 5;
+        int firstPoint_y = 10;
+        int secondPoint_x =85;
+        int secondPoint_y =50;
+        // Find differance between coordinates
+        int differance_x = secondPoint_x - firstPoint_x;
+        int differance_y = secondPoint_y - firstPoint_y;
+        // Find the sum of squared distances
+        double sum = Math.pow(differance_x, 2) + Math.pow(differance_y, 2);
+        // Find the square root of the sum
+        double distance = Math.sqrt(sum);
+        // What is the distance between the two points?
+        System.out.println("The distance between the two points is " + distance);
+
+        // Declare variable negativeNumber
+        double negativeNumber = -3.8;
+        // Find absolute value of negativeNumber
+        negativeNumber = Math.abs(-3.8);
+        // What is the absolute value of the number?
+        System.out.println("The absolute value of -3.8 is " + negativeNumber);
+
+        // Generate a random number between 0 and 1
+        double randomNumber = Math.random();
+        // What was the random number?
+        System.out.println("The random number that was generated is " + randomNumber);
+
+        // Declare starting variables
+        int days = 24;
+        int hoursPerDay = 24;
+        int minutesPerHour = 60;
+        int secondsPerMinute = 60;
+        int millisecondsPerSecond = 1000;
+        // Calculate minutes and milliseconds in 24 days
+        int finalHours = Math.multiplyExact(days, hoursPerDay);
+        int finalMinutes = Math.multiplyExact(finalHours, minutesPerHour);
+        int finalSeconds = Math.multiplyExact(finalMinutes, secondsPerMinute);
+        int finalMilliseconds = Math.multiplyExact(finalSeconds, millisecondsPerSecond);
+        // How many minutes and how many milliseconds are in 24 days?
+        System.out.println("There are " + finalMinutes + " minutes and " + finalMilliseconds + " milliseconds in 24 days");
+
     }
 }
