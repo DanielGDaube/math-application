@@ -10,9 +10,9 @@ public class MathApp {
         System.out.println("The highest salary is $" + highestSalary + " a year");
 
         // Prices of a car and a truck
-        int carPrice = 16375;
-        int truckPrice = 26579;
-        int lowestPrice = Math.min(carPrice, truckPrice);
+        double carPrice = 16375.0;
+        double truckPrice = 26579.0;
+        double lowestPrice = Math.min(carPrice, truckPrice);
         // What is the lowest price?
         System.out.println("The lowest price of the two vehicles is $" + lowestPrice);
 
@@ -30,17 +30,9 @@ public class MathApp {
         System.out.println("The square root of " + question4Number + " is " + squareRoot);
 
         // Declare variables for point coordinates
-        int firstPoint_x = 5;
-        int firstPoint_y = 10;
-        int secondPoint_x =85;
-        int secondPoint_y =50;
-        // Find differance between coordinates
-        int differance_x = secondPoint_x - firstPoint_x;
-        int differance_y = secondPoint_y - firstPoint_y;
-        // Find the sum of squared distances
-        double sum = Math.pow(differance_x, 2) + Math.pow(differance_y, 2);
-        // Find the square root of the sum
-        double distance = Math.sqrt(sum);
+        int firstPoint_x = 5, firstPoint_y = 10, secondPoint_x =85, secondPoint_y =50;
+        // Calculate the distance between the two points
+        double distance = Math.sqrt(Math.pow((secondPoint_x - firstPoint_x), 2) + Math.pow((secondPoint_y - firstPoint_y), 2));
         // What is the distance between the two points?
         System.out.println("The distance between the two points is " + distance);
 
@@ -57,11 +49,7 @@ public class MathApp {
         System.out.println("The random number that was generated is " + randomNumber);
 
         // Declare starting variables
-        int days = 24;
-        int hoursPerDay = 24;
-        int minutesPerHour = 60;
-        int secondsPerMinute = 60;
-        int millisecondsPerSecond = 1000;
+        int days = 24, hoursPerDay = 24, minutesPerHour = 60, secondsPerMinute = 60, millisecondsPerSecond = 1000;
         // Calculate minutes and milliseconds in 24 days
         int finalHours = Math.multiplyExact(days, hoursPerDay);
         int finalMinutes = Math.multiplyExact(finalHours, minutesPerHour);
